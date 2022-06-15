@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.21458333333333332" />
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.3765625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.264945652173913" />
       </map>

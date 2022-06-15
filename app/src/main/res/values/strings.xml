@@ -6,4 +6,7 @@
     <string name="signup">Signup</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="forgot_password">Forgot Password ?</string>
+    <string name="by_continuing_you_agree_to_ridemate_s">By continuing, you agree to RideMate\'s</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
 </resources>

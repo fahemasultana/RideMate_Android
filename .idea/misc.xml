@@ -5,7 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.21458333333333332" />
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.3765625" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.264945652173913" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.29322916666666665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.32303086228160266" />
+        <entry key="app/src/main/res/layout/signup_fragment.xml" value="0.254981884057971" />
       </map>
     </option>
   </component>

@@ -9,4 +9,6 @@
     <string name="by_continuing_you_agree_to_ridemate_s">By continuing, you agree to RideMate\'s</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="security">RideMate allows only verified student for safety. Please use your university email</string>
 </resources>

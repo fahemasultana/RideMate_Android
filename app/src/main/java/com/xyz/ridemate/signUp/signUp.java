@@ -12,22 +12,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.xyz.ridemate.signUp.ViewModel.MainViewModel;
 import com.xyz.ridemate.R;
 import com.xyz.ridemate.signUp.ViewModel.SignupViewModel;
 
 public class signUp extends Fragment {
 
     private SignupViewModel mViewModel;
+    private MainViewModel mainViewModel;
 
     public static signUp newInstance() {
         return new signUp();
     }
 
+
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+
         return inflater.inflate(R.layout.signup_fragment, container, false);
     }
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

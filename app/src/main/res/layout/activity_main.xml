@@ -34,7 +34,7 @@
         android:hint="@string/email_address"
         android:inputType="textWebEmailAddress|textPersonName"
         android:textAlignment="viewStart"
-        android:textColor="#3C0A090B"
+        android:textColor="#000000"
         android:textColorHint="#696969"
         android:textSize="14sp"
         android:textStyle="normal"
@@ -57,7 +57,7 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textAlignment="viewStart"
-        android:textColor="#3C0A090B"
+        android:textColor="#000000"
         android:textColorHint="#696969"
         android:textSize="14sp"
         android:textStyle="normal"
@@ -86,7 +86,6 @@
         tools:ignore="KeyboardInaccessibleWidget,MissingConstraints,UsingOnClickInXml"
         tools:text="Login"
         android:clickable="true"
-        android:onClick="login"
         android:focusable="true" />
 
     <TextView

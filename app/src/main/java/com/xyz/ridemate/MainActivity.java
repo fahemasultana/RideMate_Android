@@ -3,8 +3,8 @@ package com.xyz.ridemate;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
 
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.xyz.ridemate.signUp.ViewModel.MainViewModel;
-import com.xyz.ridemate.signUp.signUp;
+import com.xyz.ridemate.signUp.recoverPassword;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView loginBtn;
     private EditText emailEt, passwordEt;
     private TextView Signup ;
+    private NavController navController;
+    private TextView forgotPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,24 +31,26 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
         loginBtn = findViewById(R.id.login);
         emailEt = findViewById(R.id.email);
         passwordEt = findViewById(R.id.password);
-        Signup = findViewById(R.id.signup);
+        Signup = findViewById(R.id.reset);
+        forgotPass =findViewById(R.id.forgotpass);
 
-        loginBtn.setOnClickListener(view -> {
-            viewModel.login(emailEt.getText().toString(),passwordEt.getText().toString());
-        });
-
-        Signup.setOnClickListener(new View.OnClickListener() {
+        forgotPass.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
-              signUp fragment = new signUp();
-
+            public void onClick(View v)
+            {
+               forgotpassword();
             }
         });
+
+
+
+
 
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
@@ -59,7 +63,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void forgotpassword(View view) {
+    public void forgotpassword() {
+
+        Fragment fragment = new recoverPassword();
+        getSupportFragmentManager().beginTransaction().replace(androidx.fragment.R.id.fragment_container_view_tag,fragment).commit();
+
+
     }
 
     public void privacy(View view) {

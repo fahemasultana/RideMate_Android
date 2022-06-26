@@ -82,7 +82,7 @@
             app:layout_constraintTop_toBottomOf="@+id/password" />
 
         <TextView
-            android:id="@+id/signup"
+            android:id="@+id/reset"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
@@ -108,7 +108,7 @@
             tools:text="Signup" />
 
         <TextView
-            android:id="@+id/new_account"
+            android:id="@+id/forgot_pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="52dp"

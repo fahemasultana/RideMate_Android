@@ -2,4 +2,67 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navgraph"/>
+    android:id="@+id/navgraph"
+    app:startDestination="@id/login2">
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.xyz.ridemate.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_login2_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login2_to_recoverPassword"
+            app:destination="@id/recoverPassword" />
+        <action
+            android:id="@+id/action_login2_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.xyz.ridemate.signUp.signUp"
+        android:label="signUp" >
+        <action
+            android:id="@+id/action_signUp_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
+    <fragment
+        android:id="@+id/recoverPassword"
+        android:name="com.xyz.ridemate.signUp.recoverPassword"
+        android:label="recover_password_fragment"
+        tools:layout="@layout/recover_password_fragment" >
+        <action
+            android:id="@+id/action_recoverPassword_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.xyz.ridemate.homepage"
+        android:label="homepage_fragment"
+        tools:layout="@layout/homepage_fragment" >
+        <action
+            android:id="@+id/action_homepage_to_chat_inbox"
+            app:destination="@id/chat_inbox" />
+        <action
+            android:id="@+id/action_homepage_to_group_chat"
+            app:destination="@id/group_chat" />
+        <action
+            android:id="@+id/action_homepage_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat_inbox"
+        android:name="com.xyz.ridemate.chat_inbox"
+        android:label="fragment_chat_inbox"
+        tools:layout="@layout/fragment_chat_inbox" />
+    <fragment
+        android:id="@+id/group_chat"
+        android:name="com.xyz.ridemate.group_chat"
+        android:label="fragment_group_chat"
+        tools:layout="@layout/fragment_group_chat" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.xyz.ridemate.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

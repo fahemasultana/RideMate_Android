@@ -1,4 +1,4 @@
-package com.xyz.ridemate;
+package com.xyz.ridemate.login;
 
 import androidx.lifecycle.ViewModel;
 

@@ -1,4 +1,4 @@
-package com.xyz.ridemate;
+package com.xyz.ridemate.login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,10 +15,11 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.xyz.ridemate.R;
 import com.xyz.ridemate.databinding.LoginFragmentBinding;
 import com.xyz.ridemate.signUp.ViewModel.MainViewModel;
 
-public class Login extends Fragment {
+public class LoginFragment extends Fragment {
 
     private MainViewModel viewModel;
     private TextView loginBtn;
@@ -29,16 +30,15 @@ public class Login extends Fragment {
     private LoginFragmentBinding binding;
 
 
-
     private LoginViewModel mViewModel;
 
-    public static Login newInstance() {
-        return new Login();
+    public static LoginFragment newInstance() {
+        return new LoginFragment();
     }
 
     @Override
-    public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = DataBindingUtil.inflate(inflater, R.layout.login_fragment,container,false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        binding = DataBindingUtil.inflate(inflater, R.layout.login_fragment, container, false);
 
         return binding.getRoot();
     }
@@ -48,7 +48,6 @@ public class Login extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = NavHostFragment.findNavController(this);
-
 
 
         // click listeners
@@ -67,16 +66,14 @@ public class Login extends Fragment {
         });
     }
 
-        @Override
-        public void onActivityCreated (@Nullable Bundle savedInstanceState){
-            super.onActivityCreated(savedInstanceState);
-            mViewModel = new ViewModelProvider(this).get(LoginViewModel.class);
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mViewModel = new ViewModelProvider(this).get(LoginViewModel.class);
 
 
-            // TODO: Use the ViewModel
-        }
-
-
-
-
+        // TODO: Use the ViewModel
     }
+
+
+}

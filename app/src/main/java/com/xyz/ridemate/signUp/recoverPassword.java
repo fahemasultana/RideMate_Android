@@ -1,23 +1,22 @@
 package com.xyz.ridemate.signUp;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.xyz.ridemate.R;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.xyz.ridemate.databinding.RecoverPasswordFragmentBinding;
 import com.xyz.ridemate.signUp.ViewModel.RecoverPasswordViewModel;
 
 public class recoverPassword extends Fragment {
 
     private RecoverPasswordViewModel mViewModel;
+    private RecoverPasswordFragmentBinding binding;
 
     public static recoverPassword newInstance() {
         return new recoverPassword();
@@ -26,7 +25,18 @@ public class recoverPassword extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.recover_password_fragment, container, false);
+        binding = RecoverPasswordFragmentBinding.inflate(inflater);
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        clickListeners();
+    }
+
+    private void clickListeners() {
+        binding.toolbar.setNavigationOnClickListener(view -> requireActivity().onBackPressed());
     }
 
     @Override

@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUp"
-        android:name="com.xyz.ridemate.signUp.signUp"
+        android:name="com.xyz.ridemate.signUp.SignupFragment"
         android:label="signUp" >
         <action
             android:id="@+id/action_signUp_to_login2"

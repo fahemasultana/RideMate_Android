@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.1264988009592326" />
+        <entry key="src/main/res/layout/activity_main.xml" value="0.2006340579710145" />
+        <entry key="src/main/res/layout/fragment_chat_inbox.xml" value="0.21435496012369792" />
+        <entry key="src/main/res/layout/homepage_fragment.xml" value="0.2006340579710145" />
+        <entry key="src/main/res/layout/login_fragment.xml" value="0.2006340579710145" />
+        <entry key="src/main/res/layout/recover_password_fragment.xml" value="0.2006340579710145" />
+        <entry key="src/main/res/layout/signup_fragment.xml" value="0.2006340579710145" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

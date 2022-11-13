@@ -50,19 +50,79 @@
         <action
             android:id="@+id/action_homepage_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homepage_to_account2"
+            app:destination="@id/account2" />
     </fragment>
     <fragment
         android:id="@+id/chat_inbox"
         android:name="com.xyz.ridemate.chat_inbox"
         android:label="fragment_chat_inbox"
-        tools:layout="@layout/fragment_chat_inbox" />
+        tools:layout="@layout/fragment_chat_inbox" >
+        <action
+            android:id="@+id/action_chat_inbox_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_chat_inbox_to_group_chat"
+            app:destination="@id/group_chat" />
+        <action
+            android:id="@+id/action_chat_inbox_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
     <fragment
         android:id="@+id/group_chat"
         android:name="com.xyz.ridemate.group_chat"
         android:label="fragment_group_chat"
-        tools:layout="@layout/fragment_group_chat" />
+        tools:layout="@layout/fragment_group_chat" >
+        <action
+            android:id="@+id/action_group_chat_to_chat_inbox"
+            app:destination="@id/chat_inbox" />
+        <action
+            android:id="@+id/action_group_chat_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_group_chat_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.xyz.ridemate.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_account2"
+            app:destination="@id/account2" />
+        <action
+            android:id="@+id/action_settingsFragment_to_account22"
+            app:destination="@id/account2" />
+        <action
+            android:id="@+id/action_settingsFragment_to_chat_inbox"
+            app:destination="@id/chat_inbox" />
+        <action
+            android:id="@+id/action_settingsFragment_to_group_chat"
+            app:destination="@id/group_chat" />
+        <action
+            android:id="@+id/action_settingsFragment_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/account2"
+        android:name="com.xyz.ridemate.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_account2_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_account2_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_account2_to_group_chat"
+            app:destination="@id/group_chat" />
+        <action
+            android:id="@+id/action_account2_to_chat_inbox"
+            app:destination="@id/chat_inbox" />
+        <action
+            android:id="@+id/action_account2_to_homepage2"
+            app:destination="@id/homepage" />
+    </fragment>
 </navigation>

@@ -5,6 +5,6 @@ import androidx.lifecycle.ViewModel;
 
 public class SignupViewModel extends ViewModel {
     // TODO: Implement the ViewModel
-    private MutableLiveData<String> signResponseLiveData = new MutableLiveData<>();
+    private final MutableLiveData<String> signResponseLiveData = new MutableLiveData<>();
 
 }

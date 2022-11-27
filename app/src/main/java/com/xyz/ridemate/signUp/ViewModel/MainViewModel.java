@@ -19,8 +19,8 @@ import retrofit2.Response;
 
 public class MainViewModel extends ViewModel {
 
-    private ApiClient apiClient = new ApiClient();
-    private MutableLiveData<String> loginResponseLiveData = new MutableLiveData<>();
+    private final ApiClient apiClient = new ApiClient();
+    private final MutableLiveData<String> loginResponseLiveData = new MutableLiveData<>();
 
     public void login(String email, String password) {
 

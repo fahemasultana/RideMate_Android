@@ -12,7 +12,7 @@
         android:title="@string/inbox"/>
 
     <item
-        android:id="@+id/settingsFragment"
+        android:id="@+id/group_chat"
         android:icon="@drawable/chatroom"
         android:title="@string/chatroom"/>
 

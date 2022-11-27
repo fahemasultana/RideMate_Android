@@ -13,13 +13,13 @@ import androidx.lifecycle.ViewModelProvider;
 import com.xyz.ridemate.databinding.RecoverPasswordFragmentBinding;
 import com.xyz.ridemate.signUp.ViewModel.RecoverPasswordViewModel;
 
-public class recoverPassword extends Fragment {
+public class RecoverPassword extends Fragment {
 
     private RecoverPasswordViewModel mViewModel;
     private RecoverPasswordFragmentBinding binding;
 
-    public static recoverPassword newInstance() {
-        return new recoverPassword();
+    public static RecoverPassword newInstance() {
+        return new RecoverPassword();
     }
 
     @Override

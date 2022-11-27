@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/recoverPassword"
-        android:name="com.xyz.ridemate.signUp.recoverPassword"
+        android:name="com.xyz.ridemate.signUp.RecoverPassword"
         android:label="recover_password_fragment"
         tools:layout="@layout/recover_password_fragment" >
         <action
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/homepage"
-        android:name="com.xyz.ridemate.homepage"
+        android:name="com.xyz.ridemate.Homepage"
         android:label="homepage_fragment"
         tools:layout="@layout/homepage_fragment" >
         <action
@@ -56,7 +56,7 @@
     </fragment>
     <fragment
         android:id="@+id/chat_inbox"
-        android:name="com.xyz.ridemate.chat_inbox"
+        android:name="com.xyz.ridemate.ChatInbox"
         android:label="fragment_chat_inbox"
         tools:layout="@layout/fragment_chat_inbox" >
         <action
@@ -71,7 +71,7 @@
     </fragment>
     <fragment
         android:id="@+id/group_chat"
-        android:name="com.xyz.ridemate.group_chat"
+        android:name="com.xyz.ridemate.GroupChat"
         android:label="fragment_group_chat"
         tools:layout="@layout/fragment_group_chat" >
         <action

@@ -10,13 +10,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.preference.PreferenceFragmentCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class homepage extends Fragment {
+public class Homepage extends Fragment {
     private NavController navController;
     private BottomNavigationView bottomNavigationView;
 
@@ -24,27 +24,15 @@ public class homepage extends Fragment {
 
     private HomepageViewModel mViewModel;
 
-    public static homepage newInstance() {
-        return new homepage();
+    public static Homepage newInstance() {
+        return new Homepage();
     }
 
-    @Override
+   @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+                            @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.homepage_fragment, container, false);
     }
-
-
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        navController = NavHostFragment.findNavController(this);
-        bottomNavigationView.findViewById(R.id.bottom_navigation_view);
-       //Navigation.findNavController(view).navigate(R.id.bottom_navigation_view);
-         //bottomNavigationView.findViewById(R.id.bottom_navigation_view);
-        //NavigationUI.setupWithNavController(bottomNavigationView, navController);
-    }
-
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -52,5 +40,7 @@ public class homepage extends Fragment {
         mViewModel = new ViewModelProvider(this).get(HomepageViewModel.class);
         // TODO: Use the ViewModel
     }
+
+
 
 }

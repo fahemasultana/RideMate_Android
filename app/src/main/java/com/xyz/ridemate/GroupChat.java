@@ -9,7 +9,11 @@ import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-class group_chat extends Fragment {
+public class GroupChat extends Fragment {
+
+    public static GroupChat newInstance() {
+        return new GroupChat();
+    }
 
     @Nullable
     @Override

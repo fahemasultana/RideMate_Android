@@ -36,4 +36,10 @@
     <string name="inbox">Inbox</string>
     <string name="chatroom">Chatroom</string>
     <string name="account">Account</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="how_it_works">How it works?</string>
+    <string name="privacy_policys">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="orny">Orny</string>
 </resources>

@@ -5,7 +5,7 @@
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.1264988009592326" />
         <entry key="src/main/res/layout/activity_main.xml" value="0.15216674804687497" />
-        <entry key="src/main/res/layout/fragment_account.xml" value="0.2006340579710145" />
+        <entry key="src/main/res/layout/fragment_account.xml" value="0.1" />
         <entry key="src/main/res/layout/fragment_chat_inbox.xml" value="0.21435496012369792" />
         <entry key="src/main/res/layout/fragment_group_chat.xml" value="0.19635416666666666" />
         <entry key="src/main/res/layout/fragment_groupchat.xml" value="0.2006340579710145" />

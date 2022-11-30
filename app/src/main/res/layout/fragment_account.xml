@@ -39,8 +39,7 @@
             android:text="@string/edit_profile"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/how_it_works"

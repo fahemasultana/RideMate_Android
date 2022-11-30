@@ -26,7 +26,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"
-            android:text="@string/orny" />
+            android:text="@string/orny"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/edit_profile"

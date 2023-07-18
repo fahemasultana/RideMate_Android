@@ -3,12 +3,13 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
+    namespace 'com.xyz.ridemate'
 
     defaultConfig {
         applicationId "com.xyz.ridemate"
-        minSdk 19
-        targetSdk 32
+        minSdk 24
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -33,12 +34,6 @@ android {
     buildFeatures {
         dataBinding = true
     }
-}
-task wrapper(type: Wrapper){
-    gradleVersion = '7.2'
-}
-task prepareKotlinBuildScriptModel {
-
 }
 
 dependencies {
